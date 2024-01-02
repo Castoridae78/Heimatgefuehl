@@ -1,21 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    text-align: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  #box {
-    width: 200px;
-    height: 200px;
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    line-height: 200px;
-    cursor: pointer;
-  }
-  
+    background-color: #f4f4f4; /* Hintergrundfarbe für den gesamten Body */
+}
+
+header {
+    margin-bottom: 20px; /* Abstand zwischen Header und Bild */
+    background-color: #333; /* Dunkelgrauer Hintergrund für den Header */
+    color: #fff; /* Weiße Textfarbe im Header */
+    padding: 10px; /* Innenabstand für den Header */
+}
+
+.image-container {
+    display: block;
+    margin: 0 auto; /* Bild zentrieren */
+}
+
+.image-container img {
+    max-width: 200px; /* Maximale Breite des Bildes */
+    width: 100%; /* Damit es bei Bedarf die Container-Breite ausfüllt */
+    margin-bottom: 20px;
+}
