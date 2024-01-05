@@ -1,13 +1,18 @@
-// script.js
-document.addEventListener("DOMContentLoaded", function() {
-    // Wait for the DOM content to be loaded
+const wrapper = document.querySelector('.wrapper');
+const loginlink = document.querySelector('.login-link');
+const registerlink = document.querySelector('.register-link');
+const btnPopup = document.querySelector('.btnLogin-popup');
+const iconClose = document.querySelector('.icon-close');
 
-    // Get the button element
-    var myButton = document.getElementById("myButton");
-
-    // Add a click event listener to the button
-    myButton.addEventListener("click", function() {
-        // Call your custom function or add your script logic here
-        alert("Button clicked! Add your script logic here.");
-    });
+registerlink.addEventListener('click',()=>{
+    wrapper.classList.add('active')
+});
+loginlink.addEventListener('click',()=>{
+    wrapper.classList.remove('active')
+});
+btnPopup.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup')
+});
+iconClose.addEventListener('click',()=>{
+    wrapper.classList.remove('active-popup')
 });
